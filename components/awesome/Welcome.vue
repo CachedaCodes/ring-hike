@@ -48,6 +48,18 @@ const leadingsText = computed(() => [
 <template>
   <LayoutPageWrapper class="flex-1 flex">
     <LayoutPageSection class="flex-1 flex">
+      <el-button-group>
+        <el-button type="primary" :icon="ArrowLeft">Previous Page</el-button>
+        <el-button type="primary">
+          Next Page<el-icon class="el-icon--right"><ArrowRight /></el-icon>
+        </el-button>
+      </el-button-group>
+
+      <el-button-group class="ml-4">
+        <el-button type="primary" :icon="Edit" />
+        <el-button type="primary" :icon="Share" />
+        <el-button type="primary" :icon="Delete" />
+      </el-button-group>
       <div class="flex-1 flex flex-col items-center justify-center">
         <h1 class="text-center mt-4">
           <span

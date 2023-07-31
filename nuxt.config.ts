@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     // contents,
     '@nuxt/content',
+    '@element-plus/nuxt',
 
     // todo: feat/localization
     // '@nuxtjs/i18n'
@@ -62,6 +63,9 @@ export default defineNuxtConfig({
   imports: {
     dirs: [resolve('./stores'), '~/stores'],
   },
+
+  // module::element-plus
+  elementPlus: {},
 
   // module::pinia
   pinia: {
